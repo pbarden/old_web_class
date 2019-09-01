@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>App Landing Page</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <script src="application.js"></script>
+    </head>
+    <body>
+        <nav id="nav_list">
+            <a href="https://speedboostr.com" target="_blank">
+                <img id="main_logo" src="https://speedboostr.com/wp-content/uploads/2018/07/logo-speed-boostr-new.svg" alt="Speed Boostr company logo">
+            </a>
+            <ul>
+                <li>
+                    <a href="index.html">App</a>
+                </li>
+                <li>
+                    <a href="docs.html">Docs</a>
+                </li>
+                <li>
+                    <input id="c_login" type="button" value="Login" onclick="show_login()"/>
+                </li>
+            </ul>
+        </nav>
+        <div id="banner_box">
+            <img onclick="appLink()" src="Background21.png" alt="Banner image, bright color stripe across dark background" class="banner-image" width="1000" height="400">
+            <div id="page_desc">
+                <h1>
+                    Application Title
+                </h1>
+                <p>
+                    A brief description of the featured content can be added in here. This content should typically be under 250 characters in length.
+                </p>
+                <p>
+                    The header links and all other links provided on the page are either functional or contain javascript placeholder content. Pages under the "Docs" section are also prepared with various formatting options.
+                </p>
+                <p>
+                    All html, css, and javascript was coded from scratch and all image content is my personal content.
+                </p>
+                <input class="button" type="button" onclick="appLink()" value="Visit App Store >">
+            </div>
+        </div>
+        <div id="column_boxes">
+            <div class="column">
+                <div class="inner_content">
+                    <a href="#">
+                    <img class="col" src="002.png" alt="First featured article  image"></a>
+                    <article>
+                        <a href="#"><h2>
+                            Featured Content Title A
+                        </h2></a>
+                        <p>
+                            A brief description of the featured content can be added in here. This content should be about 120 characters in length.
+                        </p>
+                        <input class="button-alt" type="button" onclick="articleLink()" value="View Full >">
+                    </article>
+                </div>
+            </div>
+            <div class="column">
+                <div class="inner_content">
+                    <a href="#">
+                    <img class="col" src="008.png" alt="Second featured article  image"></a>
+                    <article>
+                        <a href="#"><h2>
+                            Featured Content Title B
+                        </h2></a>
+                        <p>
+                            A brief description of the featured content can be added in here. This content should be about 120 characters in length.
+                        </p>
+                        <input class="button-alt" type="button" onclick="articleLink()" value="View Full >">
+                    </article>
+                </div>
+            </div>
+            <div class="column">
+                <div class="inner_content">
+                    <a href="#">
+                    <img class="col" src="011.png" alt="Third featured article  image"></a>
+                    <article>
+                        <a href="#"><h2>
+                            Featured Content Title C
+                        </h2></a>
+                        <p>
+                            A brief description of the featured content can be added in here. This content should be about 120 characters in length.
+                        </p>
+                        <input class="button-alt" type="button" onclick="articleLink()" value="View Full >">
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div id="flex-foot"><p>//</p></div>
+        <footer>
+            <script>copyrw("D Paul Barden, Rodrick Calkins")</script>
+        </footer>
+        <div class="modal" id="lf_modal">
+            <div id="login-form">
+                <div class="log-form">
+                    <h2>Please Login to your account</h2>
+                    <form>
+                      <input id="username" type="text" title="username" placeholder="username" />
+                      <input id="password" type="password" title="username" placeholder="password" />
+                      <button type="button" class="btn" onclick="close_login()">Cancel</button>
+                      <button type="submit" class="btn" onclick="login()">Login</button>
+                      <a class="forgot" href="#">Forgot Username?</a>
+                    </form>
+                  </div>                  
+            </div>
+        </div>
+    </body>
+</html>
